@@ -1,0 +1,104 @@
+{
+  "name": "planning-a1",
+  "description": "A1 横版规划分析图：顶部标题条（左项目名/右图号图名）+ 左侧主图 + 右侧图例栏（指北针、比例尺、图例、说明）。按常见 A1 规划分析图式提炼。",
+  "canvas": { "width": 1800, "height": 1272 },
+  "page": {
+    "size": "A1",
+    "orientation": "landscape",
+    "dpi": 300,
+    "background": "#ffffff"
+  },
+  "frame": {
+    "inset": 18,
+    "stroke": "#111111",
+    "width": 1.2
+  },
+  "title": {
+    "band": {
+      "x": 18,
+      "y": 18,
+      "w": "full",
+      "h": 96,
+      "bottomRule": { "color": "#111111", "width": 3 }
+    },
+    "left": {
+      "x": 38,
+      "y": 0,
+      "text": "",
+      "font": "SimHei",
+      "size": 52,
+      "bold": true,
+      "color": "#111111",
+      "valign": "middle"
+    },
+    "right": {
+      "x": "right",
+      "y": 0,
+      "text": "",
+      "font": "SimHei",
+      "size": 30,
+      "bold": false,
+      "color": "#111111",
+      "valign": "middle"
+    }
+  },
+  "map": {
+    "x": 18,
+    "y": 114,
+    "w": 1390,
+    "h": "rest",
+    "fit": "contain",
+    "border": { "color": "#111111", "width": 1.2 }
+  },
+  "sidebar": {
+    "x": 1408,
+    "y": 114,
+    "w": 374,
+    "h": "rest",
+    "rule": { "color": "#111111", "width": 1.2 },
+    "north": {
+      "cx": "center",
+      "y": 152,
+      "size": 76,
+      "label": "北"
+    },
+    "scaleBar": {
+      "cx": "center",
+      "y": 262,
+      "width": 310,
+      "segments": [0, 50, 100, 200, 400],
+      "unit": "米",
+      "height": 9
+    },
+    "legend": {
+      "title": { "text": "图例", "font": "SimHei", "size": 26, "y": 342 },
+      "startY": 392,
+      "rowHeight": 34,
+      "swatch": { "w": 46, "h": 22 },
+      "label": { "font": "Microsoft YaHei", "size": 19, "x": 66 },
+      "lineGap": 12
+    },
+    "note": {
+      "y": 800,
+      "text": "",
+      "font": "Microsoft YaHei",
+      "size": 15,
+      "lineHeight": 26,
+      "indent": 30,
+      "color": "#333333"
+    }
+  },
+  "layerStyles": [
+    { "match": "道路|街巷|红线", "stroke": "#e0447c", "width": 6, "fill": "none" },
+    { "match": "地块|用地|住宅|商业|公园|绿地", "stroke": "#9a9a9a", "width": 1.6, "fillAuto": true, "fillOpacity": 0.75 },
+    { "match": "建筑", "stroke": "#333333", "width": 1.2, "fill": "#d9d3c8", "fillOpacity": 0.85 },
+    { "match": "标注|文字|TEXT", "stroke": "#333333", "width": 1 },
+    { "match": ".*", "stroke": "#555555", "width": 1.1, "fill": "none" }
+  ],
+  "palette": ["#d94f4f", "#f2c14e", "#7fb069", "#4a90d9", "#b07aa1", "#e08a5c", "#5ab0b0", "#c9c94a", "#8c8c8c", "#c98bb9"],
+  "legendAuto": {
+    "enabled": true,
+    "maxItems": 8,
+    "labelFromLayer": true
+  }
+}

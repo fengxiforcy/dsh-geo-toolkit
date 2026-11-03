@@ -1,0 +1,7 @@
+# dsh-geo-toolkit bundle patch.
+#
+# GIS/CAD 分析工具：读 DXF 概览、按图层/类型/文字查询、DWG 转 DXF、导出 SVG 分析图。
+# 解析走纯 JS（lib/dxf.js，零依赖）；DWG 走 dwgdxf（WASM，R13–R2018，只在调用时 init）。
+- insert:
+    - id: geo-toolkit
+      name: dsh-geo-toolkit

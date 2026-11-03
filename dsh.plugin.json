@@ -1,0 +1,11 @@
+{
+  "name": "dsh-geo-toolkit",
+  "description": "GIS/CAD analysis toolkit for DSH: DXF overview, entity/layer query, DWG to DXF conversion, SVG analysis map export.",
+  "version": "0.1.0",
+  "entry": {
+    "name": "dsh-geo-toolkit",
+    "inject": [
+      "tools"
+    ]
+  }
+}

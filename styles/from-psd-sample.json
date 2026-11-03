@@ -1,0 +1,98 @@
+{
+  "name": "psd-sample",
+  "description": "从一份 PSD 模板提取的版式草稿（单主图适配；多图区需要手工拆分）",
+  "canvas": {
+    "width": 1800,
+    "height": 3816
+  },
+  "page": {
+    "size": "custom",
+    "mmW": 841,
+    "mmH": 1783,
+    "dpi": 300,
+    "background": "#ffffff",
+    "fitContent": true,
+    "bottomMargin": 76
+  },
+  "frame": null,
+  "title": {
+    "band": {
+      "x": 0,
+      "y": 0,
+      "w": "full",
+      "h": 341,
+      "bottomRule": null
+    },
+    "left": {
+      "x": 58,
+      "y": 0,
+      "text": "",
+      "font": "MicrosoftYaHei",
+      "size": 65,
+      "bold": true,
+      "color": "#030000",
+      "valign": "middle"
+    },
+    "right": {
+      "x": "right",
+      "y": 0,
+      "text": "",
+      "font": "MicrosoftYaHei",
+      "size": 14,
+      "color": "#030000",
+      "valign": "middle"
+    }
+  },
+  "map": {
+    "x": 0,
+    "y": 341,
+    "w": "full",
+    "h": "auto",
+    "border": null
+  },
+  "sidebar": null,
+  "layerStyles": [
+    {
+      "match": "道路|街巷|红线|路",
+      "stroke": "#e0447c",
+      "width": 5,
+      "fill": "none"
+    },
+    {
+      "match": "地块|用地|住宅|商业|公园|绿地",
+      "stroke": "#9a9a9a",
+      "width": 1.4,
+      "fillAuto": true,
+      "fillOpacity": 0.75
+    },
+    {
+      "match": "建筑",
+      "stroke": "#333333",
+      "width": 1.2,
+      "fill": "#d9d3c8",
+      "fillOpacity": 0.85
+    },
+    {
+      "match": ".*",
+      "stroke": "#555555",
+      "width": 1.1,
+      "fill": "none"
+    }
+  ],
+  "palette": [
+    "#d94f4f",
+    "#f2c14e",
+    "#7fb069",
+    "#4a90d9",
+    "#b07aa1",
+    "#e08a5c",
+    "#5ab0b0",
+    "#c9c94a",
+    "#8c8c8c",
+    "#c98bb9"
+  ],
+  "legendAuto": {
+    "enabled": false,
+    "maxItems": 8
+  }
+}

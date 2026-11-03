@@ -1,0 +1,66 @@
+{
+  "name": "dsh-geo-toolkit",
+  "version": "0.1.0",
+  "private": false,
+  "description": "DeepSeek Harness plugin: GIS/CAD analysis toolkit — read DXF, convert DWG to DXF, query layers/entities, export analysis maps, GIS summary/buffer/overlay. Pure JS for parsing, WebAssembly for DWG.",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./lib/dxf": "./lib/dxf.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "tool-spec.js",
+    "lib",
+    "tools",
+    "workers",
+    "styles",
+    "vendor",
+    "cordis.patch.yml",
+    "dsh.plugin.json",
+    "README.md",
+    "LICENSE",
+    "test"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "gis",
+    "cad",
+    "dxf",
+    "dwg",
+    "geo",
+    "planning",
+    "urban-planning",
+    "mapping"
+  ],
+  "author": "dsh-geo-toolkit contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengxiforcy/dsh-geo-toolkit.git"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@resvg/resvg-js-win32-x64-msvc": "^2.6.2",
+    "ag-psd": "^34.1.0",
+    "base64-js": "1.5.1",
+    "dwgdxf": "^2.0.1",
+    "jpeg-js": "^0.4.4",
+    "pako": "2.1.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": "^22.19 || >=24"
+  },
+  "scripts": {
+    "test": "node test/smoke.test.mjs"
+  }
+}
